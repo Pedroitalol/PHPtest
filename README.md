@@ -1,26 +1,20 @@
-# PHPtest
+# Buscar endereços pelo CEP
 
-Teste de seleção para vaga PHP
+Implementação de um sistema solicitado por um teste para vaga de desenvolvedor PHP.
 
-## Faça um fork desse projeto e siga as intruções a seguir utilizando esse projeto.
+## Base do sistema
 
-Construir uma aplicação web para buscar endereço. Aplicação deve fazer uma chamada na API via cep : https://viacep.com.br/.
-Premissas:
+Como dito na especificação do teste, foi implementado sistema para pesquisar um endereço por meio do CEP.
 
-  ● Usar PHP 5.6 ou superior.
-  
-  ● Usar Bootstrap.
-  
-  ● JavaScript (Não usar framework).
-  
-  ● Retorno deve ser em xml.
-  
-  ● Salvar os dados em uma base e antes de uma nova consulta verificar se o cep já foi consultado, caso tenha sido, trazer    informação da base e não deve efetuar uma nova consulta.
-  
-  ● Tratar o erro. Dar um retorno amigável para usuário leigo.
-  
-  
-## PS: Valorizamos a criatividade no layout.
+O projeto contém uma única página, que é derivada em outras 3 subpáginas: Pesquisar CEP, Área do administrador e sobre.
+- Pesquisar CEP é a base do sistema, onde é implementada o principal objetivo do sistema.
+- Área do administrador é feita para fazer alterações no banco de dados, podendo ser três: adicionar um CEP novo, pesquisar se há um CEP específico no Banco de dados e excluir um CEP do Banco de dados.
+- Sobre é apenas uma área para falar do sistema e do criador.
 
-# Entrega: 
- * Disponibilizar um link do repositório no GitHub e encaminhar para developer@cd2.com.br
+## Como executar o sistema
+
+Foi feito usando o xampp como ferramenta de desenvolvimento. Porém, usando qualquer outra ferramenta, é possível executar o código base, para isso, é preciso apenas implementar um banco de dados usando os dados que se encontram no bds/ceps.sql, criando essa tabela em um banco de dados com o nome "teste".
+
+## Observação
+
+No momento que esse readme foi escrito, foi implementado apenas a base do sistema e a subpágina Pesquisar CEP, por garantia. Quando forem adicionadas as outras implementações, será atualizado.
