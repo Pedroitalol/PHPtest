@@ -12,9 +12,11 @@
     <?php
         include("includes/navbar.php");
     ?>
+    <div class="container">
     
-    <h2>Página de sobre.</h2>
-
+        <h2>Página de sobre.</h2>
+        
+    </div>
     <?php
         include("includes/footer.php");
     ?>

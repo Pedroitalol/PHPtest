@@ -25,22 +25,25 @@
     <?php
         include("includes/navbar.php");
     ?>
-    <h2>Área do administrador.</h2>
-    <form method="post"><label>Cep:
-        <input name="cep" class="form-control" aria-label="default input example" type="text" id="cep" value="" size="10" maxlength="9"
-            onblur="pesquisacep(this.value);" />
-        </label><br />
-        <input type="submit" name="acao" value="Verificar no banco de dados!" class="btn btn-primary">
-        <input type="hidden" name="ver" value="ver"/>
-    </form>
 
-    <?php
-        // Execução das querys no banco de dados:
-        if(isset($_POST["ver"])){
-            echo $_POST["cep"];
-        }
-    ?>
-    
+    <div class="container">
+
+        <h2>Área do administrador.</h2>
+        <form method="post"><label>Cep:
+            <input name="cep" class="form-control" aria-label="default input example" type="text" id="cep" value="" size="10" maxlength="9"
+                onblur="pesquisacep(this.value);" />
+            </label><br />
+            <input type="submit" name="acao" value="Verificar no banco de dados!" class="btn btn-primary">
+            <input type="hidden" name="ver" value="ver"/>
+        </form>
+
+        <?php
+            // Execução das querys no banco de dados:
+            if(isset($_POST["ver"])){
+                echo $_POST["cep"];
+            }
+        ?>
+    </div>    
     <?php
         include("includes/footer.php");
     ?>

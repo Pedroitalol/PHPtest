@@ -7,7 +7,7 @@
 
     function mostrarElegantemente($cep, $rua, $bairro, $cidade, $uf, $ibge){
         ?>
-        <div>
+        <div class="container">
             <ul class="list-group">
                 <li class="list-group-item active" aria-current="true">Informações do endereço:</li>
                 <li class="list-group-item">CEP: <?php echo $cep ?> </li>

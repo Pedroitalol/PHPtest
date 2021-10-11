@@ -7,6 +7,7 @@ Implementação de um sistema solicitado por um teste para vaga de desenvolvedor
 Como dito na especificação do teste, foi implementado sistema para pesquisar um endereço por meio do CEP.
 
 O projeto contém uma única página, que é derivada em outras 3 subpáginas: Pesquisar CEP, Área do administrador e sobre.
+
 - Pesquisar CEP é a base do sistema, onde é implementada o principal objetivo do sistema.
 - Área do administrador é feita para fazer alterações no banco de dados, podendo ser três: adicionar um CEP novo, pesquisar se há um CEP específico no Banco de dados e excluir um CEP do Banco de dados.
 - Sobre é apenas uma área para falar do sistema e do criador.
